@@ -24,7 +24,9 @@
   "homepage": "https://github.com/hoanghaibk93/nodeJs_blog#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "express-handlebars": "^6.0.7"
+    "express-handlebars": "^6.0.7",
+    "mongoose": "^7.5.0",
+    "mongoose-slug-updater": "^3.3.0"
   },
   "devDependencies": {
     "morgan": "^1.10.0",

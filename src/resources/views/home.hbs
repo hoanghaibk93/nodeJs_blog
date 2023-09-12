@@ -1,3 +1,25 @@
-<h1>Home Page 123</h1>
+{{!-- <h1>Home Page 123</h1>
 <button type="" style="border: 1px soild red;">COn ga</button>
-<input type="" value="">
+<input type="" value=""> --}}
+<h1>{{courses.title}}</h1>
+
+<div class="mt-4">
+    <div class="row">
+        {{#each courses}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card">
+                <a href="/courses/{{this.slug}}">
+                    <img src="{{this.image}}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <a href="/courses/{{this.slug}}">
+                        <h5 class="card-title">{{this.name}}</h5>
+                    </a>
+                    <p class="card-text">{{this.description}}</p>
+                    <a href="#" class="btn btn-primary">Mua Khóa học</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

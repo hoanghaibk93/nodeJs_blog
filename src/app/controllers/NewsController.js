@@ -8,4 +8,4 @@ class NewsController {
         res.send("Detail New !!!!");
     }
 }
-module.exports = new NewsController;
+module.exports = new NewsController();
